@@ -42,7 +42,7 @@ export default function Product() {
               href={book.amazonUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block bg-navy text-white px-10 py-4 font-sans text-sm sm:text-base uppercase tracking-widest hover:bg-navy-dark transition-colors shadow-sm"
+              className="inline-block bg-navy text-white px-10 py-4 font-sans text-sm sm:text-base uppercase tracking-widest hover:bg-navy-dark transition-colors shadow-sm focus:outline-none focus:ring-4 focus:ring-navy/50"
             >
               Acheter sur Amazon
             </a>
@@ -51,10 +51,11 @@ export default function Product() {
 
         {/* Right Column: Visual */}
         <div className="w-full md:w-1/2 flex justify-center md:sticky md:top-24 mt-8 md:mt-0">
+          {/* Note RGAA : Ce contenant gris clair sert à mettre en valeur la couverture, le contraste n'est pas critique ici. */}
           <div className="w-full max-w-sm lg:max-w-md bg-gray-200/50 p-8 sm:p-12 lg:p-16 flex items-center justify-center relative shadow-inner">
             <img 
               src={book.coverUrl} 
-              alt={`Couverture de ${book.title}`} 
+              alt={`Couverture détaillée de l'ouvrage : ${book.title}`} 
               className="max-w-full h-auto object-cover shadow-2xl z-10"
               style={{ aspectRatio: '2/3' }}
             />

@@ -9,7 +9,7 @@ export default function Footer() {
           <h3 className="font-serif text-xl mb-2 text-white">Éditions LDC</h3>
           <p>contact@ladelegationcatholique.fr</p>
           <p>&copy; 2026 La Délégation Catholique</p>
-          <Link to="/mentions-legales" className="underline underline-offset-4 hover:text-white transition-colors w-fit mt-2">
+          <Link to="/mentions-legales" className="underline underline-offset-4 hover:text-white transition-colors w-fit mt-2 focus:outline-none focus:ring-2 focus:ring-white rounded-sm">
             Mentions légales
           </Link>
         </div>
@@ -21,17 +21,17 @@ export default function Footer() {
               Soyez les premiers informés des nouvelles sorties
             </h3>
             <form className="flex flex-col space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <label htmlFor="newsletter-email" className="sr-only">Adresse e-mail</label>
+              <label htmlFor="newsletter-email" className="sr-only">Adresse e-mail pour la lettre d'information</label>
               <input
                 type="email"
                 id="newsletter-email"
                 placeholder="Saisissez votre adresse e-mail*"
-                className="w-full bg-transparent border border-white px-4 py-3 text-white placeholder-gray-300 focus:outline-none focus:ring-1 focus:ring-white focus:border-white font-sans text-sm"
+                className="w-full bg-transparent border border-white px-4 py-3 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:border-white font-sans text-sm"
                 required
               />
               <button
                 type="submit"
-                className="w-full bg-transparent border border-white text-white py-3 uppercase tracking-wider font-sans text-sm hover:bg-white hover:text-navy transition-colors"
+                className="w-full bg-transparent border border-white text-white py-3 uppercase tracking-wider font-sans text-sm hover:bg-white hover:text-navy focus:outline-none focus:ring-2 focus:ring-white transition-colors"
               >
                 Je m'inscris
               </button>
@@ -43,10 +43,10 @@ export default function Footer() {
       <div className="w-full py-4 flex justify-center border-t border-navy-dark">
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="text-white hover:opacity-70 transition-opacity"
-          aria-label="Retour en haut"
+          className="text-white hover:opacity-70 transition-opacity focus:outline-none focus:ring-2 focus:ring-white rounded-sm p-1"
+          aria-label="Retour en haut de la page"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 15l7-7 7 7" />
           </svg>
         </button>

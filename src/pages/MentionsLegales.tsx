@@ -32,10 +32,19 @@ export default function MentionsLegales() {
             </p>
           </section>
           
-          <section>
+          <section className="mb-8">
             <h2 className="font-serif text-xl text-navy mb-4">Propriété intellectuelle</h2>
             <p>
               L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés. La reproduction de tout ou partie de ce site sur un support quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-serif text-xl text-navy mb-4">Accessibilité (RGAA)</h2>
+            <p>
+              La Délégation Catholique s'engage à rendre son site internet accessible conformément à l'article 47 de la loi n°2005-102 du 11 février 2005. À ce stade de développement, une évaluation de conformité au RGAA (Référentiel Général d'Amélioration de l'Accessibilité) est en cours de structuration.
+              <br /><br />
+              Des efforts continus sont apportés pour assurer une perception aisée (contraste renforcé), une navigation clavier robuste et un balisage sémantique rigoureux.
             </p>
           </section>
         </div>

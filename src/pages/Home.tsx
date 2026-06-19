@@ -23,7 +23,7 @@ export default function Home() {
         
         {/* Bottom Button */}
         <div className="mt-20 flex justify-center">
-          <Link to="/nos-livres" className="bg-navy text-white px-10 py-3 font-sans text-sm tracking-widest uppercase hover:bg-navy-dark transition-colors">
+          <Link to="/nos-livres" className="bg-navy text-white px-10 py-3 font-sans text-sm tracking-widest uppercase hover:bg-navy-dark transition-colors focus:outline-none focus:ring-4 focus:ring-navy/50">
             Tous nos livres
           </Link>
         </div>

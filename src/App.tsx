@@ -12,6 +12,7 @@ import Objectif from './pages/Objectif';
 import Contact from './pages/Contact';
 import MentionsLegales from './pages/MentionsLegales';
 import Product from './pages/Product';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/objectif" element={<Objectif />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

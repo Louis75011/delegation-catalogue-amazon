@@ -14,11 +14,12 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="relative">
                 <label htmlFor="prenom" className="sr-only">Prénom</label>
+                {/* Note RGAA : Focus clavier visible avec ring */}
                 <input 
                   type="text" 
                   id="prenom"
                   placeholder="Prénom"
-                  className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:border-navy transition-colors"
+                  className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent transition-colors"
                   required
                 />
               </div>
@@ -28,7 +29,7 @@ export default function Contact() {
                   type="text" 
                   id="nom"
                   placeholder="Nom de famille"
-                  className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:border-navy transition-colors"
+                  className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent transition-colors"
                   required
                 />
               </div>
@@ -36,24 +37,24 @@ export default function Contact() {
 
             {/* Email */}
             <div className="relative">
-              <label htmlFor="email" className="sr-only">E-mail</label>
+              <label htmlFor="email" className="sr-only">Adresse e-mail</label>
               <input 
                 type="email" 
                 id="email"
                 placeholder="E-mail"
-                className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:border-navy transition-colors"
+                className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent transition-colors"
                 required
               />
             </div>
 
             {/* Message Area */}
             <div className="relative">
-              <label htmlFor="message" className="sr-only">Message</label>
+              <label htmlFor="message" className="sr-only">Message complet</label>
               <textarea 
                 id="message"
                 placeholder="Rédigez votre message ici..."
                 rows={5}
-                className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:border-navy transition-colors resize-none"
+                className="w-full bg-transparent border-b border-gray-400 py-2 font-sans text-sm md:text-base text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent transition-colors resize-none"
                 required
               ></textarea>
             </div>
@@ -62,7 +63,7 @@ export default function Contact() {
             <div className="flex justify-center pt-8">
               <button 
                 type="submit"
-                className="bg-transparent border border-navy text-navy px-16 py-3 font-sans text-sm tracking-widest uppercase hover:bg-navy hover:text-white transition-colors"
+                className="bg-transparent border border-navy text-navy px-16 py-3 font-sans text-sm tracking-widest uppercase hover:bg-navy hover:text-white focus:outline-none focus:ring-4 focus:ring-navy/50 transition-colors"
               >
                 Envoyer
               </button>
