@@ -1,0 +1,6 @@
+{
+  "name": "La Délégation Catholique",
+  "description": "Maison d'édition classique et solennelle en ligne.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
