@@ -31,7 +31,7 @@ export default function Header() {
         {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-8 lg:gap-12 text-sm lg:text-base font-sans font-light text-gray-700 uppercase tracking-widest mt-2 lg:mt-0">
           <Link to="/" className="hover:text-navy hover:underline underline-offset-8 transition-colors">Accueil</Link>
-          <Link to="/" className="hover:text-navy hover:underline underline-offset-8 transition-colors">Nos livres</Link>
+          <Link to="/nos-livres" className="hover:text-navy hover:underline underline-offset-8 transition-colors">Nos livres</Link>
           <Link to="/objectif" className="hover:text-navy hover:underline underline-offset-8 transition-colors">Notre objectif</Link>
           <Link to="/contact" className="hover:text-navy hover:underline underline-offset-8 transition-colors">Contact</Link>
         </nav>

@@ -7,4 +7,6 @@ export interface Book {
   pages: number;
   amazonUrl: string;
   description: string;
+  analysis: string;
+  biography: string;
 }

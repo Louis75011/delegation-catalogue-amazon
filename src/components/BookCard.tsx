@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Book } from '../types';
 
 interface BookCardProps {
@@ -8,10 +9,8 @@ export default function BookCard({ book }: BookCardProps) {
   return (
     <div className="flex flex-col items-center group">
       {/* Cover Image Container */}
-      <a 
-        href={book.amazonUrl} 
-        target="_blank" 
-        rel="noopener noreferrer"
+      <Link 
+        to={`/livre/${book.id}`}
         className="block w-full overflow-hidden mb-6 shadow-sm group-hover:shadow-md transition-shadow duration-300"
       >
         <img 
@@ -19,7 +18,7 @@ export default function BookCard({ book }: BookCardProps) {
           alt={`Couverture de ${book.title}`} 
           className="w-full object-cover aspect-[2/3] transform group-hover:scale-[1.02] transition-transform duration-500 ease-out"
         />
-      </a>
+      </Link>
       
       {/* Details */}
       <div className="flex flex-col items-center text-center px-2 space-y-2 w-full">
@@ -36,14 +35,12 @@ export default function BookCard({ book }: BookCardProps) {
           {book.price}
         </span>
         
-        <a 
-          href={book.amazonUrl} 
-          target="_blank" 
-          rel="noopener noreferrer"
+        <Link 
+          to={`/livre/${book.id}`}
           className="mt-6 inline-block border border-navy text-navy px-8 py-2 font-sans text-sm uppercase tracking-wider hover:bg-navy hover:text-white transition-colors"
         >
-          Commander
-        </a>
+          Découvrir
+        </Link>
       </div>
     </div>
   );
